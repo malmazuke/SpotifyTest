@@ -14,6 +14,8 @@
 		9B49AF8A1AB4346A00BCD549 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B49AF891AB4346A00BCD549 /* Images.xcassets */; };
 		9B49AF8D1AB4346A00BCD549 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B49AF8B1AB4346A00BCD549 /* LaunchScreen.xib */; };
 		9B49AF991AB4346A00BCD549 /* SpotifyTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AF981AB4346A00BCD549 /* SpotifyTestTests.m */; };
+		9B49AFA41AB43D4A00BCD549 /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AFA31AB43D4A00BCD549 /* PlaylistViewController.m */; };
+		9B49AFA71AB43DF800BCD549 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AFA61AB43DF800BCD549 /* UIImage+ImageWithColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9B49AF921AB4346A00BCD549 /* SpotifyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B49AF971AB4346A00BCD549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B49AF981AB4346A00BCD549 /* SpotifyTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotifyTestTests.m; sourceTree = "<group>"; };
+		9B49AFA21AB43D4A00BCD549 /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		9B49AFA31AB43D4A00BCD549 /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		9B49AFA51AB43DF800BCD549 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		9B49AFA61AB43DF800BCD549 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				9B49AF811AB4346A00BCD549 /* AppDelegate.m */,
 				9B49AF831AB4346A00BCD549 /* ViewController.h */,
 				9B49AF841AB4346A00BCD549 /* ViewController.m */,
+				9B49AFA21AB43D4A00BCD549 /* PlaylistViewController.h */,
+				9B49AFA31AB43D4A00BCD549 /* PlaylistViewController.m */,
+				9B49AFA51AB43DF800BCD549 /* UIImage+ImageWithColor.h */,
+				9B49AFA61AB43DF800BCD549 /* UIImage+ImageWithColor.m */,
 				9B49AF861AB4346A00BCD549 /* Main.storyboard */,
 				9B49AF891AB4346A00BCD549 /* Images.xcassets */,
 				9B49AF8B1AB4346A00BCD549 /* LaunchScreen.xib */,
@@ -219,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B49AFA71AB43DF800BCD549 /* UIImage+ImageWithColor.m in Sources */,
+				9B49AFA41AB43D4A00BCD549 /* PlaylistViewController.m in Sources */,
 				9B49AF851AB4346A00BCD549 /* ViewController.m in Sources */,
 				9B49AF821AB4346A00BCD549 /* AppDelegate.m in Sources */,
 				9B49AF7F1AB4346A00BCD549 /* main.m in Sources */,

@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="674" y="479"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlist View Controller-->
         <scene sceneID="1U9-hZ-LNf">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LvW-oS-f9B" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LvW-oS-f9B" customClass="PlaylistViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G6n-m5-4sE"/>
                         <viewControllerLayoutGuide type="bottom" id="ays-my-1N4"/>
@@ -150,8 +150,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXg-G7-WFd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXg-G7-WFd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="959-8E-9aW">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="UXn-7c-WFu">
+                                                <rect key="frame" x="16" y="59" width="568" height="44"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="138" id="CPD-E5-ql3"/>
+                                            <constraint firstAttribute="trailing" secondItem="UXn-7c-WFu" secondAttribute="trailing" id="FhS-e7-Wo6"/>
+                                            <constraint firstItem="UXn-7c-WFu" firstAttribute="leading" secondItem="959-8E-9aW" secondAttribute="leading" id="Rku-9U-i64"/>
+                                            <constraint firstItem="UXn-7c-WFu" firstAttribute="leading" secondItem="959-8E-9aW" secondAttribute="leading" constant="16" id="iid-4F-Oab"/>
+                                            <constraint firstAttribute="bottom" secondItem="UXn-7c-WFu" secondAttribute="bottom" constant="35" id="oLy-n6-Azf"/>
+                                            <constraint firstItem="UXn-7c-WFu" firstAttribute="top" secondItem="959-8E-9aW" secondAttribute="top" constant="59" id="pJF-Q9-Zq5"/>
+                                            <constraint firstAttribute="trailing" secondItem="UXn-7c-WFu" secondAttribute="trailing" constant="16" id="z15-D4-Eaw"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="FhS-e7-Wo6"/>
+                                                <exclude reference="Rku-9U-i64"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Di0-W9-Zmi">
+                                        <rect key="frame" x="0.0" y="138" width="600" height="397"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="397" id="5G3-35-GLZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="959-8E-9aW" firstAttribute="leading" secondItem="WXg-G7-WFd" secondAttribute="leading" id="4lK-lL-rit"/>
+                                    <constraint firstAttribute="trailing" secondItem="959-8E-9aW" secondAttribute="trailing" id="DMI-53-VHm"/>
+                                    <constraint firstItem="Di0-W9-Zmi" firstAttribute="top" secondItem="959-8E-9aW" secondAttribute="bottom" id="OBh-hQ-AX3"/>
+                                    <constraint firstItem="Di0-W9-Zmi" firstAttribute="leading" secondItem="WXg-G7-WFd" secondAttribute="leading" id="Uqp-Hc-Nq6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Di0-W9-Zmi" secondAttribute="trailing" id="pfq-47-dH8"/>
+                                    <constraint firstItem="959-8E-9aW" firstAttribute="top" secondItem="WXg-G7-WFd" secondAttribute="top" id="zUq-Oz-1pe"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,6 +205,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="searchBar" destination="UXn-7c-WFu" id="aTJ-SM-ssF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Do8-OI-43M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
