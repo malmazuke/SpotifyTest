@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66FAEB451AB50B32009BB98D /* PlayingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FAEB441AB50B32009BB98D /* PlayingView.xib */; };
+		66D1DBB91AB6B17A00975875 /* CurrentlyPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1DBB81AB6B17A00975875 /* CurrentlyPlayingViewController.m */; };
+		66FAEB451AB50B32009BB98D /* CurrentlyPlaying.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FAEB441AB50B32009BB98D /* CurrentlyPlaying.xib */; };
 		9B49AF7F1AB4346A00BCD549 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AF7E1AB4346A00BCD549 /* main.m */; };
 		9B49AF821AB4346A00BCD549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AF811AB4346A00BCD549 /* AppDelegate.m */; };
 		9B49AF851AB4346A00BCD549 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AF841AB4346A00BCD549 /* ViewController.m */; };
-		9B49AF881AB4346A00BCD549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B49AF861AB4346A00BCD549 /* Main.storyboard */; };
 		9B49AF8A1AB4346A00BCD549 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B49AF891AB4346A00BCD549 /* Images.xcassets */; };
 		9B49AF8D1AB4346A00BCD549 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B49AF8B1AB4346A00BCD549 /* LaunchScreen.xib */; };
 		9B49AF991AB4346A00BCD549 /* SpotifyTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B49AF981AB4346A00BCD549 /* SpotifyTestTests.m */; };
@@ -30,7 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66FAEB441AB50B32009BB98D /* PlayingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayingView.xib; sourceTree = "<group>"; };
+		66D1DBB71AB6B17A00975875 /* CurrentlyPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentlyPlayingViewController.h; sourceTree = "<group>"; };
+		66D1DBB81AB6B17A00975875 /* CurrentlyPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentlyPlayingViewController.m; sourceTree = "<group>"; };
+		66FAEB441AB50B32009BB98D /* CurrentlyPlaying.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentlyPlaying.xib; sourceTree = "<group>"; };
 		9B49AF791AB4346A00BCD549 /* SpotifyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B49AF7D1AB4346A00BCD549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B49AF7E1AB4346A00BCD549 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,7 +40,6 @@
 		9B49AF811AB4346A00BCD549 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B49AF831AB4346A00BCD549 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9B49AF841AB4346A00BCD549 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9B49AF871AB4346A00BCD549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B49AF891AB4346A00BCD549 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B49AF8C1AB4346A00BCD549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9B49AF921AB4346A00BCD549 /* SpotifyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,10 +98,11 @@
 				9B49AFA31AB43D4A00BCD549 /* PlaylistViewController.m */,
 				9B49AFA51AB43DF800BCD549 /* UIImage+ImageWithColor.h */,
 				9B49AFA61AB43DF800BCD549 /* UIImage+ImageWithColor.m */,
-				66FAEB441AB50B32009BB98D /* PlayingView.xib */,
-				9B49AF861AB4346A00BCD549 /* Main.storyboard */,
-				9B49AF891AB4346A00BCD549 /* Images.xcassets */,
+				66D1DBB71AB6B17A00975875 /* CurrentlyPlayingViewController.h */,
+				66D1DBB81AB6B17A00975875 /* CurrentlyPlayingViewController.m */,
+				66FAEB441AB50B32009BB98D /* CurrentlyPlaying.xib */,
 				9B49AF8B1AB4346A00BCD549 /* LaunchScreen.xib */,
+				9B49AF891AB4346A00BCD549 /* Images.xcassets */,
 				9B49AF7C1AB4346A00BCD549 /* Supporting Files */,
 			);
 			path = SpotifyTest;
@@ -212,10 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B49AF881AB4346A00BCD549 /* Main.storyboard in Resources */,
 				9B49AF8D1AB4346A00BCD549 /* LaunchScreen.xib in Resources */,
 				9B49AF8A1AB4346A00BCD549 /* Images.xcassets in Resources */,
-				66FAEB451AB50B32009BB98D /* PlayingView.xib in Resources */,
+				66FAEB451AB50B32009BB98D /* CurrentlyPlaying.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +238,7 @@
 				9B49AFA41AB43D4A00BCD549 /* PlaylistViewController.m in Sources */,
 				9B49AF851AB4346A00BCD549 /* ViewController.m in Sources */,
 				9B49AF821AB4346A00BCD549 /* AppDelegate.m in Sources */,
+				66D1DBB91AB6B17A00975875 /* CurrentlyPlayingViewController.m in Sources */,
 				9B49AF7F1AB4346A00BCD549 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,14 +262,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9B49AF861AB4346A00BCD549 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B49AF871AB4346A00BCD549 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9B49AF8B1AB4346A00BCD549 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
