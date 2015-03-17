@@ -8,7 +8,10 @@
 
 #import "CurrentlyPlayingViewController.h"
 
-@interface CurrentlyPlayingViewController ()
+@interface CurrentlyPlayingViewController () <UIScrollViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @end
 
 @implementation CurrentlyPlayingViewController
