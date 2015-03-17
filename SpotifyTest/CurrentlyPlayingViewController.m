@@ -16,6 +16,8 @@
 
 @implementation CurrentlyPlayingViewController
 
+//http://initwithfunk.com/blog/2014/02/07/how-to-build-the-facebook-paper-status-bar-hover/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
